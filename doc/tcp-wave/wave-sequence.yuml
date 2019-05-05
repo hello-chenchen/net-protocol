@@ -1,0 +1,7 @@
+// {type:sequence}
+// {generate:true}
+[A]-[note: four way wave]
+[A]FIN:seq=numberc | ACK:numberd>[B]
+[B]ACK:numberc+1 | seq=numberd>[A]
+[B]FIN:seq=numberd | ACK:numberc+1>[A]
+[A]ACK:numberd+1 | seq=numberc+1>[B]

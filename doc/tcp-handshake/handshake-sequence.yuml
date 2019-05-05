@@ -1,6 +1,6 @@
 // {type:sequence}
 // {generate:true}
 [A]-[note: three way handshake]
-[A]SYN:numbera(ISN)>[B]
-[B]SYN:numberb | ACK:numbera+1(SYN+1)>[A]
+[A]SYN:seq=numbera(ISN)>[B]
+[B]SYN:seq=numberb | ACK:numbera+1(SYN+1)>[A]
 [A]ACK:numberb+1(ISN+1)>[B]
